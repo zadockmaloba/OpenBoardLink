@@ -1,0 +1,11 @@
+# KiCAD Generated files
+
+fp-info-cache
+gerbers/
+manufacturing/
+.history/
+*-backups/
+*-bak
+*.bak
+bom
+~*.lck
