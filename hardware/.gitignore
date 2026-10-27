@@ -9,3 +9,4 @@ manufacturing/
 *.bak
 bom
 ~*.lck
+*.dsn
