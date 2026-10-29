@@ -5036,12 +5036,6 @@
 		(uuid "ed3a4112-162b-4a63-a442-b5bc539abe93")
 	)
 	(junction
-		(at 20.32 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f188a176-2ed2-4edb-8723-da83e01b927e")
-	)
-	(junction
 		(at 200.66 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5178,16 +5172,6 @@
 			(type default)
 		)
 		(uuid "07a19a82-8300-4585-be3c-9fc401a01a03")
-	)
-	(wire
-		(pts
-			(xy 43.18 133.35) (xy 49.53 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a97a396-84ea-4629-a172-3423768b8a65")
 	)
 	(wire
 		(pts
@@ -5521,16 +5505,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 133.35) (xy 35.56 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "471ed965-14f3-4488-b2b6-a0089607c8eb")
-	)
-	(wire
-		(pts
 			(xy 44.45 170.18) (xy 46.99 170.18)
 		)
 		(stroke
@@ -5701,16 +5675,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 133.35) (xy 20.32 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6128184d-a77b-442c-bdfc-d4bc230290e5")
-	)
-	(wire
-		(pts
 			(xy 76.2 149.86) (xy 76.2 160.02)
 		)
 		(stroke
@@ -5801,7 +5765,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 121.92) (xy 49.53 121.92)
+			(xy 43.18 121.92) (xy 50.8 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6241,6 +6205,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 125.73) (xy 50.8 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9625261-2407-4695-9717-fe6576d98d89")
+	)
+	(wire
+		(pts
 			(xy 200.66 52.07) (xy 200.66 54.61)
 		)
 		(stroke
@@ -6388,16 +6362,6 @@
 			(type default)
 		)
 		(uuid "e71f2b73-a752-4045-bf38-bc9bdf7161c7")
-	)
-	(wire
-		(pts
-			(xy 25.4 133.35) (xy 20.32 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7411cf2-bba6-4bd3-ab43-c0196be161ba")
 	)
 	(wire
 		(pts
@@ -6598,16 +6562,6 @@
 			(justify right bottom)
 		)
 		(uuid "189c12a9-3295-456d-9b03-0f1a4e9bda95")
-	)
-	(label "STM_VCC"
-		(at 163.83 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b680527-3a1f-4f76-938d-0248455f36cc")
 	)
 	(label "T_SWDIO"
 		(at 127 189.23 0)
@@ -6899,16 +6853,6 @@
 		)
 		(uuid "99dd26dd-c496-41b2-a69f-526a7a50e623")
 	)
-	(label "TX_LED"
-		(at 49.53 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a26a851c-54d2-41cf-92bf-3fe94417dc91")
-	)
 	(label "SPI1_MOSI"
 		(at 168.91 77.47 0)
 		(effects
@@ -6958,16 +6902,6 @@
 			(justify left bottom)
 		)
 		(uuid "b3f92aab-d1f3-459f-a59b-92b13dde4e0e")
-	)
-	(label "RX_LED"
-		(at 49.53 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0bba3ef-780c-4620-9360-57306c7b5194")
 	)
 	(label "SPI1_MISO"
 		(at 168.91 74.93 0)
@@ -7182,86 +7116,6 @@
 			(project "USB2SWD"
 				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 39.37 133.35 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "098626a5-5006-4329-9872-9a928fb640e2")
-		(property "Reference" "R6"
-			(at 39.37 127 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 39.37 129.54 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 39.37 135.128 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 39.37 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "49916fe1-53cd-4f35-a7c4-74d4713eac38")
-		)
-		(pin "1"
-			(uuid "2fd7fb8b-22bf-4287-91db-237c9791fd8c")
-		)
-		(instances
-			(project "USB2SWD"
-				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8312,7 +8166,7 @@
 				)
 			)
 		)
-		(property "Value" "TX LED"
+		(property "Value" "PWR LED"
 			(at 30.7975 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8629,98 +8483,6 @@
 			(project "USB2SWD"
 				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 133.35 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5280bff5-15fc-4711-8e8b-bfa14e40f063")
-		(property "Reference" "D3"
-			(at 30.7975 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RX LED"
-			(at 30.7975 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 29.21 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 29.21 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4c0b2a48-0f75-4a98-ae91-678c24c954ff")
-		)
-		(pin "1"
-			(uuid "72e14a71-dd21-42f1-9ade-f59fa27fa7e4")
-		)
-		(instances
-			(project "USB2SWD"
-				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9122,6 +8884,84 @@
 			(project "USB2SWD"
 				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64f98316-d340-4428-8366-9018e9d2f3e4")
+		(property "Reference" "#PWR033"
+			(at 50.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cb41cd6-1b04-4190-900f-80b356a7e501")
+		)
+		(instances
+			(project "USB2SWD"
+				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -11582,6 +11422,17 @@
 			)
 		)
 		(property "Description" "USB serial converter, 2Mbps, UART, JEITA SOIC-8 (SOP-8)"
+			(at 254 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2977777"
 			(at 254 143.51 0)
 			(hide yes)
 			(show_name no)
