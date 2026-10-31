@@ -1,0 +1,6 @@
+board:
+  name: openboardlink
+  full_name: OpenBoardLink v1.0.3
+  vendor: st
+  socs:
+  - name: stm32f103xb

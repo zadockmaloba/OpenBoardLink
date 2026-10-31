@@ -4,17 +4,17 @@
       "relPath": "",
       "name": "firmware",
       "buildConfigs": {
-        "build/stm32_min_dev/stm32f103xb_blue": {
+        "build/openboardlink/stm32f103xb": {
           "relBoardDir": "boards",
-          "relBoardSubDir": "../external/zephyr/boards/others/stm32_min_dev",
-          "board": "stm32_min_dev/stm32f103xb",
-          "revision": "blue",
-          "name": "build/stm32_min_dev/stm32f103xb_blue",
+          "relBoardSubDir": "custom/openboardlink",
+          "board": "openboardlink/stm32f103xb",
+          "name": "build/openboardlink/stm32f103xb",
           "compilerOptimization": "debug",
           "westBuildArgs": [],
           "westBuildCMakeArgs": [
             "-DCONFIG_DEBUG_OPTIMIZATIONS=y",
-            "-DCONFIG_DEBUG_THREAD_INFO=y"
+            "-DCONFIG_DEBUG_THREAD_INFO=y",
+            "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
           ],
           "confFiles": {
             "config": [],

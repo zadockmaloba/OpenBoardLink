@@ -1,0 +1,69 @@
+/dts-v1/;
+#include <st/f1/stm32f103Xb.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <st/f1/stm32f103c(8-b)tx-pinctrl.dtsi>
+
+/ {
+    model = "openboardlink";
+    compatible = "st,stm32f103c8";
+
+    aliases {
+        led0 = &led_0;
+    };
+
+    chosen {
+        zephyr,sram = &sram0;
+        zephyr,console = &usart1;
+        zephyr,shell-uart = &usart1;
+        zephyr,flash = &flash0;
+    };
+
+    led {
+        compatible = "gpio-leds";
+
+
+        led_0: pb4 {
+            gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
+
+&clk_hse {
+    status = "okay";
+    clock-frequency = <DT_FREQ_M(8)>;
+};
+
+&pll {
+    mul = <9>;
+    clocks = <&clk_hse>;
+    status = "okay";
+};
+
+&rcc {
+    clocks = <&pll>;
+    clock-frequency = <DT_FREQ_M(72)>;
+    ahb-prescaler = <1>;
+    apb1-prescaler = <2>;
+    apb2-prescaler = <1>;
+};
+
+&gpioa {
+    status = "okay";
+};
+
+&gpiob {
+    status = "okay";
+};
+
+&usart1 {
+    pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
+    pinctrl-names = "default";
+    status = "okay";
+};
+
+&spi2 {
+	status = "okay";
+	pinctrl-0 = <&spi2_nss_master_pb12 &spi2_sck_master_pb13
+		     &spi2_miso_master_pb14 &spi2_mosi_master_pb15>;
+	pinctrl-names = "default";
+};
