@@ -46,7 +46,7 @@ void led_task_thread_entry(void *arg1, void *arg2, void *arg3)
 		}
 
 		led_state = !led_state;
-		printf("LED state: %s\n", led_state ? "ON" : "OFF");
+		//printf("LED state: %s\n", led_state ? "ON" : "OFF");
 		k_msleep(SLEEP_TIME_MS);
     }
 }
