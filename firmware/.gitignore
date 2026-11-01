@@ -3,6 +3,7 @@ external
 **/build*/
 .vscode/compile_commands.json
 .vscode/extensions.json
+.vscode/settings.json
 .DS_Store
 .cache/
 compile_commands.json
