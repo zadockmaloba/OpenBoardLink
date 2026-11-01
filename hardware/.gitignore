@@ -10,3 +10,4 @@ manufacturing/
 bom
 ~*.lck
 *.dsn
+fabrication-toolkit-options.json
