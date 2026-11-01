@@ -8,7 +8,7 @@
     compatible = "st,stm32f103c8";
 
     aliases {
-        led0 = &led_0;
+        status-led = &led_0;
     };
 
     chosen {
@@ -22,8 +22,9 @@
         compatible = "gpio-leds";
 
 
-        led_0: pb4 {
-            gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+        led_0: pa0 {
+            gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+            status = "okay";
         };
     };
 };

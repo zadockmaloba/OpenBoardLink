@@ -5074,20 +5074,16 @@
 		(uuid "7003de8d-47e2-429e-a4c0-b2954cc44e20")
 	)
 	(no_connect
+		(at 168.91 80.01)
+		(uuid "72acb7f9-54c1-4e2a-b35c-4d2c5372c008")
+	)
+	(no_connect
 		(at 168.91 62.23)
 		(uuid "827db989-5f7c-4c4f-8f18-18c0912a59b1")
 	)
 	(no_connect
 		(at 44.45 177.8)
 		(uuid "8337a90b-3ff9-4005-aec7-0bde6be31db2")
-	)
-	(no_connect
-		(at 168.91 59.69)
-		(uuid "8fae8d2c-7dfd-4a91-87c3-dcf44fc5c62d")
-	)
-	(no_connect
-		(at 168.91 80.01)
-		(uuid "901b1a53-7b15-4e70-bbd2-c9fe8019ed98")
 	)
 	(no_connect
 		(at 168.91 87.63)
@@ -5372,6 +5368,16 @@
 			(type default)
 		)
 		(uuid "312a0f6c-ce3e-4d41-9320-997537c438d0")
+	)
+	(wire
+		(pts
+			(xy 252.73 99.06) (xy 255.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337d93ba-ec40-4f1d-b442-dca48327eac0")
 	)
 	(wire
 		(pts
@@ -5685,6 +5691,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 102.87) (xy 270.51 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ce75815-768e-4161-bf40-b97993d989d4")
+	)
+	(wire
+		(pts
 			(xy 73.66 71.12) (xy 73.66 78.74)
 		)
 		(stroke
@@ -5942,6 +5958,16 @@
 			(type default)
 		)
 		(uuid "9ae61663-b7d1-4a44-b5dd-42898b6f80c2")
+	)
+	(wire
+		(pts
+			(xy 240.03 99.06) (xy 245.11 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dd61e23-897b-471b-a329-c8b3d7df8354")
 	)
 	(wire
 		(pts
@@ -6415,6 +6441,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 99.06) (xy 270.51 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece678c4-923a-4cde-9727-8e570838bdbb")
+	)
+	(wire
+		(pts
 			(xy 118.11 40.64) (xy 118.11 46.99)
 		)
 		(stroke
@@ -6582,6 +6618,16 @@
 			(justify left bottom)
 		)
 		(uuid "22bb5b29-eb9f-4810-bb46-05db7148729f")
+	)
+	(label "STATUS_LED"
+		(at 168.91 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e29c2fa-d97c-4572-bfca-aa4dff46f83e")
 	)
 	(label "CC2"
 		(at 29.21 59.69 0)
@@ -6893,6 +6939,16 @@
 		)
 		(uuid "abd12f47-5776-494c-94ec-7c317b361356")
 	)
+	(label "STATUS_LED"
+		(at 240.03 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b2cd8f2b-38b8-4519-b1a2-543f98890548")
+	)
 	(label "T_SWDIO"
 		(at 196.85 146.05 0)
 		(effects
@@ -7116,6 +7172,84 @@
 			(project "USB2SWD"
 				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 270.51 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "093c58b0-25ce-4f72-866e-d99a1916091e")
+		(property "Reference" "#PWR035"
+			(at 270.51 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 270.51 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 270.51 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cae06b80-ec7c-45a5-b976-dfdd192e5941")
+		)
+		(instances
+			(project "USB2SWD"
+				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -10414,6 +10548,86 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 259.08 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95dcd245-094f-4a7f-b6e1-0f386367ec2b")
+		(property "Reference" "R6"
+			(at 259.08 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 259.08 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 259.08 100.838 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 259.08 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "395af139-a044-4550-8e7f-12f30ce34998")
+		)
+		(pin "1"
+			(uuid "cdba25d6-b3e3-4d3f-b5ad-c94d761352c1")
+		)
+		(instances
+			(project "USB2SWD"
+				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 72.39 106.68 0)
 		(unit 1)
 		(body_style 1)
@@ -12164,6 +12378,98 @@
 			(project "USB2SWD"
 				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 248.92 99.06 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e092e048-fa16-4ad5-aee3-c3d1eefd610d")
+		(property "Reference" "D3"
+			(at 250.5075 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STAT LED"
+			(at 250.5075 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 248.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 248.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 248.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0d857473-21b4-43b2-89f0-ef126fc171ac")
+		)
+		(pin "1"
+			(uuid "edfb4fcb-bdd1-4008-80d5-36e0723405ee")
+		)
+		(instances
+			(project "USB2SWD"
+				(path "/7bc2913b-0444-4f4b-915c-7d0fc0e0be92"
+					(reference "D3")
 					(unit 1)
 				)
 			)
