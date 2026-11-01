@@ -21,6 +21,13 @@ Schematic: `USB2SWD.kicad_sch` (KiCad 10).
 
 ## Firmware
 
+**NOTE:** 
+- CH340P/FTDI drivers required for serial communication.
+    - See: https://sparks.gogo.co.nz/ch340.html?srsltid=AYCX9vJ7uKf6C0Zw0mtyxMH3N8wv1fY7HUsu3qdjR-UEwpCyX_hEoPqb
+
+- STM32CubeProgrammer is currently required to flash firmware to the programmer.
+    - See: https://www.st.com/en/development-tools/stm32cubeprog.html
+
 Zephyr 4.3.0 with a custom board definition (`openboardlink`, SoC `stm32f103xb`).
 
 
