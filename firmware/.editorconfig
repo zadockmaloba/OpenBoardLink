@@ -1,0 +1,25 @@
+# EditorConfig helps maintain consistent coding styles across different IDEs
+# https://editorconfig.org
+root = true
+
+[*]
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+charset = utf-8
+end_of_line = lf
+
+# Standard LLVM C++ formatting rules
+[*.{c,h,cpp,hpp,cc,cxx,hh,inc}]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# Python files follow standard 4-space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Makefiles require tabs
+[{Makefile,*.mk}]
+indent_style = tab
