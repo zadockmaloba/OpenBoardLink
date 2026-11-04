@@ -42,6 +42,11 @@ Requires west, CMake and the Zephyr SDK 0.17.x.
 
 ## Snapshots
 
+### Rev-1 (v0.5) 4-Nov-2026
+![][rev-1.0.5]
+
+[rev-1.0.5]: ./snapshots/REV-1-v0.5.png
+
 ### Rev-1 (v0.4) 1-Nov-2026
 ![][rev-1.0.4]
 
