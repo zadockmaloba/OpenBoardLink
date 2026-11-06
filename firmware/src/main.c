@@ -5,6 +5,7 @@
 #include <zephyr/kernel.h>
 
 #include "drivers/uart.h"
+#include "lib/at_commands.h"
 
 /* 10000 msec = 10 sec */
 #define SLEEP_TIME_MS 1000
@@ -54,13 +55,8 @@ static void led_task_thread_entry(void *arg1, void *arg2, void *arg3) {
   }
 }
 
-static int uart_rx_callback(uint8_t *data, size_t len) {
-  return obl_uart_tx_async(data, len, NULL, NULL);
-}
-
 int main(void) {
-  obl_uart_set_rx_ready_cb(uart_rx_callback);
-  obl_uart_init();
+  obl_at_init();
 
   while (1) {
     k_msleep(SLEEP_TIME_MS);

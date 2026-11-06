@@ -18,6 +18,18 @@ config OBL_UART_TX_STACK_SIZE
   default 1024
 config OBL_UART_TX_PRIO
   int
-  default 5 
+  default 5
+
+config OBL_AT_MAX_LINE
+  int
+  default 64
+
+config OBL_AT_MAX_RESP
+  int
+  default 256
+
+config OBL_AT_STACK_SIZE
+  int
+  default 2048
 
 source "Kconfig.zephyr"
