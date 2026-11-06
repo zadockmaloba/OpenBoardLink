@@ -1,0 +1,23 @@
+config OBL_UART_MAX_TX_LEN
+  int "Maximum size of our TX packets"
+  default 32
+
+config OBL_UART_RX_CHUNK_LEN
+  int "Max data readable in the RX DMA channel"
+  default 32
+
+config OBL_UART_BUFFER_COUNT
+  int "Number of UART buffers to be created"
+  default 4
+
+config OBL_UART_TX_REQ_COUNT 
+  int
+  default 8
+config OBL_UART_TX_STACK_SIZE 
+  int
+  default 1024
+config OBL_UART_TX_PRIO
+  int
+  default 5 
+
+source "Kconfig.zephyr"

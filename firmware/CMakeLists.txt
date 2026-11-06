@@ -7,4 +7,4 @@ list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 
 project(blinky)
 
-target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/main.c src/drivers/uart.c)
