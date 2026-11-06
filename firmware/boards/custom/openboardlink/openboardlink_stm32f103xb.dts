@@ -26,6 +26,16 @@
       status = "okay";
     };
   };
+
+  swdp0: swdp {
+    compatible = "zephyr,swdp-gpio";
+    clk-gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
+    dio-gpios = <&gpiob 14 GPIO_ACTIVE_HIGH>;
+    dout-gpios = <&gpiob 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    reset-gpios = <&gpioa 15 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
+
+    port-write-cycles = <2>;
+  };
 };
 
 &clk_hse {
@@ -63,6 +73,14 @@
   pinctrl-names = "default";
   status = "okay";
   fifo-enable;
+};
+
+/* SWO capture on USART3 RX (PB11, the default F1 mapping) */
+&usart3 {
+  pinctrl-0 = <&usart3_rx_pb11>;
+  pinctrl-names = "default";
+  current-speed = <115200>;   /* set to match the target's SWO rate */
+  status = "okay";
 };
 
 &dma1 {
