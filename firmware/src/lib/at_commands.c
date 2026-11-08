@@ -4,9 +4,11 @@
 #include <string.h>
 #include <zephyr/kernel.h>
 #include <zephyr/version.h>
+#include <stdlib.h>
 
 #include "at_commands.h"
 #include "drivers/uart.h"
+#include "drivers/swd.h"
 
 #define AT_LINE_MAX CONFIG_OBL_AT_MAX_LINE
 #define AT_RESP_MAX CONFIG_OBL_AT_MAX_RESP
@@ -229,3 +231,15 @@ static int cmd_cmds(enum at_cmd_type type, char *args) {
   return 0;
 }
 AT_CMD_REGISTER(at_cmds, "+CMDS", cmd_cmds, "List commands");
+
+static int cmd_freq(enum at_cmd_type type, char *args) {
+  if (type == AT_CMD_SET ) {
+    int num = atoi(args);
+    printk("Converted int %d", num);
+    obl_clk_square(HZ_TO_US( num ), 100);
+    at_printf("\r\n+Freq: %s\r\n", args);
+    return 0;
+  }
+  return -ENOTSUP;
+}
+AT_CMD_REGISTER(at_freq, "+FREQ", cmd_freq, "Set SWDCLK (PB 13) Freq");

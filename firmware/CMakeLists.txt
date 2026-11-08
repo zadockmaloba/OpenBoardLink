@@ -21,6 +21,8 @@ target_sources(app
 PRIVATE 
   src/main.c 
   src/tasks.c
+  src/drivers/swd.h
+  src/drivers/swd.c
   src/drivers/uart.h
   src/drivers/uart.c
   src/lib/at_commands.h
